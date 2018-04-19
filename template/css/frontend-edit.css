@@ -13,6 +13,9 @@
 .layout-edit .btn-toolbar {
   margin-bottom: 20px;
 }
+.layout-edit .btn-toolbar .btn .fa{
+  padding-right: 5px;
+}
 .layout-edit .tab-content {
   padding-top: 20px;
 }
