@@ -49,8 +49,8 @@ class  plgSystemHelix3 extends JPlugin
         JForm::addFormPath(JPATH_PLUGINS.'/system/helix3/params');
 
         if ($form->getName()=='com_menus.item') { //Add Helix menu params to the menu item
-
             JHtml::_('jquery.framework');
+            $data = (array)$data;
 
             if($data['id'] && $data['parent_id'] == 1) {
 
