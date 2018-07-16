@@ -96,7 +96,7 @@ class Helix3
 		. ($itemid ? ' itemid-' . $itemid : '')
 		. ($language ? ' ' . $language : '')
 		. ($direction ? ' ' . $direction : '')
-		. ($pageclass ? ' ' . $pageclass : '')
+		. (isset($pageclass) && $pageclass ? ' ' . $pageclass : '')
 		. ($class ? ' ' . $class : '');
 	}
 
