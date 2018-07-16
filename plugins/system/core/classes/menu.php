@@ -455,6 +455,7 @@ class Helix3Menu {
 				default:
 				case 0:
 					$link_rel = ($item->params->get('menu-anchor_rel', '')) ? 'rel="' . $item->params->get('menu-anchor_rel') . '"' : '' ;
+					$flink = ($flink) ? $flink : 'javascript:void(0);' ;
 					$output .= '<a '.$class.' href="'. $flink .'" '. $link_rel .' '.$title.'>'.$linktitle.'</a>';
 				break;
 				case 1:
