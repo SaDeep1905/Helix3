@@ -41,6 +41,21 @@ fieldset[disabled] .form-control {
 textarea.form-control {
   height: auto;
 }
+.form-horizontal .control-label {
+  width: 100%;
+  text-align: left;
+}
+.form-horizontal .controls {
+  margin: 0;
+  width: 100%;
+}
+.form-horizontal .controls input,
+.form-horizontal .controls textarea {
+  width: 100%;
+}
+.form-horizontal .controls textarea {
+  height: 131px;
+}
 @font-face {
   font-family: 'IcoMoon';
   src: url('../fonts/IcoMoon.eot');
@@ -810,7 +825,8 @@ dl.article-info dd.hits span[class*=" icon-"] {
 .sp-megamenu-parent >li.menu-justify {
   position: static;
 }
-.sp-megamenu-parent >li >a {
+.sp-megamenu-parent >li >a,
+.sp-megamenu-parent >li >span {
   display: inline-block;
   padding: 0 15px;
   line-height: 90px;
@@ -818,8 +834,10 @@ dl.article-info dd.hits span[class*=" icon-"] {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #000;
+  margin: 0;
 }
-.sp-megamenu-parent >li.sp-has-child>a:after {
+.sp-megamenu-parent >li.sp-has-child>a:after,
+.sp-megamenu-parent >li.sp-has-child>span:after {
   font-family: "FontAwesome";
   content: " \f107";
 }
@@ -885,13 +903,15 @@ dl.article-info dd.hits span[class*=" icon-"] {
   padding: 0;
   position: relative;
 }
-.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a {
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a,
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item span {
   display: block;
   padding: 10px;
   color: #141414;
   cursor: pointer;
 }
-.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a.sp-group-title {
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item >a.sp-group-title,
+.sp-megamenu-parent .sp-dropdown li.sp-menu-item span.sp-group-title {
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -2332,7 +2352,6 @@ ul.social-icons >li a {
 }
 .article-info >dd {
   display: inline-block;
-  font-size: 12px;
   color: #666;
   text-transform: uppercase;
   margin: 0 8px;
@@ -2838,7 +2857,7 @@ table.category tbody >tr td {
   z-index: 99999;
 }
 .sp-pre-loader .sp-loader-clock {
-  border: 3px solid #22b8f0;
+  border: 3px solid #333333;
   border-radius: 60px;
   bottom: 0;
   height: 80px;
@@ -2852,7 +2871,7 @@ table.category tbody >tr td {
 .sp-pre-loader .sp-loader-clock:after {
   content: "";
   position: absolute;
-  background-color: #22b8f0;
+  background-color: #333333;
   top: 2px;
   left: 48%;
   height: 38px;
@@ -2882,7 +2901,7 @@ table.category tbody >tr td {
   height: 80px;
   width: 80px;
   border-radius: 80px;
-  border: 3px solid rgba(34,184,240,0.7);
+  background-color: rgba(34,184,240,0.5);
   left: 0;
   top: 0;
   right: 0;
@@ -3399,4 +3418,14 @@ table.category tbody >tr td {
     margin: 0 5px;
     font-size: 90%;
   }
+}
+
+@media (min-width: 768px) {
+  .sppb-col-sm-offset-6 {
+    margin-left: 50%;
+  }
+}
+.sppb-testimonial-pro .sppb-item img {
+  display: inline-block;
+  margin-bottom: 10px;
 }
