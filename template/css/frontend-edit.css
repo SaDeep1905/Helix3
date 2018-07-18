@@ -134,9 +134,9 @@ svg {
 
 /* *** Joomla 3.7 Compatibility *** */
 .edit.item-page .modal {
-    position: initial;
+  position: initial;
 }
 .edit.item-page .media-preview.add-on {
-    height: 34px;
-    line-height: 28px;
+  height: 34px;
+  line-height: 28px;
 }
