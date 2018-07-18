@@ -7,7 +7,7 @@
     <authorUrl>http://www.joomshaper.com</authorUrl>
     <copyright>Copyright (C) 2010 - 2018 JoomShaper.com. All rights reserved.</copyright>
     <license>http://www.gnu.org/licenses/gpl-2.0.html GPLv2 or later</license>
-    <version>2.4</version>
+    <version>2.5</version>
     <description>Shaper Helix3 - Starter Template of Helix3 framework</description>
 
     <updateservers>
@@ -186,7 +186,7 @@
                     <option value="after">HELIX_FEATURE_LOAD_POS_AFTER</option>
                 </field>
 
-                <field name="copyright" class="child copyright copyright_1" type="textarea" rows="6" cols="30" default="© 2015 Your Company. All Rights Reserved. Designed By JoomShaper" label="HELIX_COMPYRIGHT_TEXT" description="HELIX_COMPYRIGHT_TEXT_DESC" filter="raw" />
+                <field name="copyright" class="child copyright copyright_1" type="textarea" rows="6" cols="30" default="© {year} Your Company. All Rights Reserved. Designed By JoomShaper" label="HELIX_COMPYRIGHT_TEXT" description="HELIX_COMPYRIGHT_TEXT_DESC" filter="raw" />
 
                 <!--Social Icons-->
                 <field type="group" title="HELIX_SOCIAL_ICONS" />
